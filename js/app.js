@@ -8,7 +8,7 @@ let getWeather = () => {
     if (userInput.length == 0) {
         result.innerHTML = `<h3 class="msg"> Please enter a city name</h3>`
     } else {
-        let url = `https:api.openweathermap.org/data/2.5/weather?q=${userInput}&APPID=d955a60452364facb8c107a5be93ff59&units=metric`;
+        let url = `https://api.openweathermap.org/data/2.5/weather?q=${userInput}&APPID=d955a60452364facb8c107a5be93ff59&units=metric`;
         allCities.value = "";
         fetch (url)
         .then((res) => res.json())
